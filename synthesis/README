@@ -1,0 +1,5 @@
+
+
+pico2wave -l es-ES -w test.wav "Buenos días, ¿que tal estás?" && aplay test.wav 
+
+
