@@ -3,9 +3,9 @@
 from pocketsphinx.pocketsphinx import Decoder
 
 config = Decoder.default_config()
-config.set_string('-hmm', 'cmusphinx-es-5.2/model_parameters/voxforge_es_sphinx.cd_ptm_4000')
-config.set_string('-lm', 'es-20k.lm.gz')
-config.set_string('-dict', 'es.dict')
+config.set_string('-hmm', 'model-es/cmusphinx-es-5.2/model_parameters/voxforge_es_sphinx.cd_ptm_4000')
+config.set_string('-lm', 'model-es/es-20k.lm.gz')
+config.set_string('-dict', 'model-es/es.dict')
 config.set_string('-logfn', '/dev/null')
 decoder = Decoder(config)
 
